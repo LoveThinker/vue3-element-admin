@@ -1,15 +1,17 @@
 <script setup lang="ts">
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from "@/components/HelloWorld.vue";
 
-import { useCounterStore } from '@/store/counter'
+import { useCounterStore } from "@/store/counter";
 // 实例化
-const counterStore = useCounterStore()
+const counterStore = useCounterStore();
 </script>
 
 <template>
   <div>
     <h1 class="text-3xl">vue3-element-admin-父组件</h1>
-    <el-button type="primary" @click="counterStore.increment">count++</el-button>
+    <el-button type="primary" @click="counterStore.increment"
+      >count++</el-button
+    >
 
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
